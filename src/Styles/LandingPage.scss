@@ -13,6 +13,7 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
+
   .hero {
     display: flex;
     align-items: center;
@@ -23,6 +24,8 @@
     background-size: cover;
     background-position: center;
     width: 100%;
+    position: relative;
+    overflow: hidden;
     .hero-con {
       display: flex;
       align-items: center;
@@ -46,14 +49,15 @@
           font-size: 50px;
           font-weight: 900;
           font-family: "poppins", sans-serif;
+          @media screen and (max-width: 330px) {
+            width: 100%;
+            font-size: 45px;
+          }
           span {
             color: #053f5c;
           }
         }
         p {
-          border: 1px solid gray;
-          border-radius: 10px;
-          padding: 5px 50px 5px 50px;
           width: fit-content;
         }
       }
@@ -90,6 +94,98 @@
         }
       }
     }
+
+    .circle-1 {
+      width: 100px;
+      height: 100px;
+      background-color: rgba(45, 87, 170, 0.4);
+      top: 10%;
+      left: 10%;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      animation: move 60s linear infinite;
+      position: absolute;
+      opacity: 1;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .circle-2 {
+      width: 80px;
+      height: 80px;
+      background-color: rgba(245, 40, 40, 0.4);
+      top: 30%;
+      left: 60%;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      animation: move 60s linear infinite;
+      position: absolute;
+      z-index: 1;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .circle-3 {
+      width: 120px;
+      height: 120px;
+      background-color: rgba(187, 255, 79, 0.4);
+      top: 60%;
+      left: 60%;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      animation: move 60s linear infinite;
+      position: absolute;
+      z-index: 1;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    @keyframes move {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+      10% {
+        transform: translate3d(50px, -100px, 0);
+      }
+      20% {
+        transform: translate3d(150px, -50px, 0);
+      }
+      30% {
+        transform: translate3d(-50px, 100px, 0);
+      }
+      40% {
+        transform: translate3d(0, 125px, 0);
+      }
+      50% {
+        transform: translate3d(50px, 100px, 0);
+      }
+      60% {
+        transform: translate3d(-75px, -150px, 0);
+      }
+      70% {
+        transform: translate3d(100px, 50px, 0);
+      }
+      80% {
+        transform: translate3d(-200px, 150px, 0);
+      }
+      90% {
+        transform: translate3d(-50px, -100px, 0);
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+    }
   }
   .about {
     width: 100%;
@@ -101,6 +197,11 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+      }
       .abtitle-con {
         display: flex;
         align-items: flex-start;
@@ -135,6 +236,9 @@
             background-color: #053f5c;
             color: #fff;
           }
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
         }
       }
       .about-text {
@@ -144,8 +248,31 @@
         flex-direction: column;
         width: 65%;
         gap: 20px;
+        @media screen and (max-width: 768px) {
+          width: 90%;
+        }
         p {
           line-height: 28px;
+        }
+        button {
+          display: none;
+          @media screen and (max-width: 768px) {
+            display: block;
+            background-color: #fff;
+            padding: 15px 25px 15px 25px;
+            color: #053f5c;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0px 0px 0px 2px inset rgb(5, 63, 92);
+
+            transition: background-color 0.3s ease;
+            &:hover {
+              background-color: #053f5c;
+              color: #fff;
+            }
+          }
         }
       }
     }

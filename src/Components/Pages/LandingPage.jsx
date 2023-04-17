@@ -34,11 +34,15 @@ const LandingPage = () => {
                 <p>Connect with us</p>
                 <FontAwesomeIcon
                   icon={faAngleRight}
-                  style={{ marginTop: "5px" }}
+                  bounce
+                  style={{ marginTop: "3px" }}
                 />
               </button>
             </div>
           </div>
+          <div className="circle-1">Web and App Development</div>
+          <div className="circle-2">Branding Solutions</div>
+          <div className="circle-3">Digital Marketing</div>
         </div>
         <div className="about">
           <div className="about-con">
@@ -48,7 +52,7 @@ const LandingPage = () => {
                 <div className="about-line"></div>
               </header>
               <div className="header-text">
-                <h2>Delivering Trusted Digital Experiences</h2>
+                <h2>We Deliver Trusted Digital Experiences</h2>
               </div>
               <button>Start a Project</button>
             </div>
@@ -68,6 +72,7 @@ const LandingPage = () => {
                 We are ever ready to take up even more challenging projects with
                 stringent deadlines and deliver to clients' satisfaction.
               </p>
+              <button>Start a Project</button>
             </div>
           </div>
         </div>
