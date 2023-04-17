@@ -1,34 +1,51 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logo from "../Images/Logo.png";
 import "../Styles/Navbar.scss";
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const togglemenu = () => {
+    console.log("clicked");
+    setToggle(!toggle);
+  };
+
   return (
     <div className="navbar">
       <div className="nav-con">
-        <div className="ham-logo">
-          <img src={Logo} alt="Alproseltech" />
+        <div className="ham-logo" onClick={togglemenu}>
+          <Link to="/">
+            <img src={Logo} alt="Alproseltech" />
+          </Link>
         </div>
-        <ul>
-          <Link to="/" className="nav-items">
-            <li>Home</li>
-          </Link>
-          <Link to="/" className="nav-items">
-            <li>Services</li>
-          </Link>
-          <Link to="/" className="nav-items">
-            <li>Work</li>
-          </Link>
-        </ul>
+        <div className={toggle ? "nav" : "null"}>
+          <ul>
+            <li>
+              <NavLink to="/" className="nav-items">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/" className="nav-items">
+                Services
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/" className="nav-items">
+                Work
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="nav-btn">
         <button>Start a Project</button>
       </div>
-      <div className="ham">
-        <FontAwesomeIcon icon={faBars} size="2x" className="hamburger" />
+      <div className="ham" onClick={togglemenu}>
+        <FontAwesomeIcon icon={toggle ? faXmark : faBars} size="2x" />
       </div>
     </div>
   );
