@@ -15,6 +15,7 @@
   flex-direction: column;
   gap: 100px;
   width: 100%;
+  overflow: hidden;
 
   .hero {
     display: flex;
@@ -47,9 +48,9 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        gap: 15px;
+        gap: 20px;
         h1 {
-          line-height: 65px;
+          line-height: 55px;
           font-size: 50px;
           font-weight: 900;
           font-family: "Satoshi", sans-serif;
@@ -274,15 +275,68 @@
       gap: 20px;
       width: 100%;
       .work-box {
-        // display: flex;
-        // align-items: center;
-        // // justify-content: space-between;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        overflow: auto;
+        width: 100%;
         .box-con {
           border-radius: 10px;
-          img {
-            height: 300px;
-            width: 200px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: 5px;
+          .img {
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              height: 300px;
+              width: 400px;
+              transition: scale 0.7s ease;
+              @media screen and (max-width: 575px) {
+                width: 300px;
+                height: 200px;
+              }
+            }
+            &:hover {
+              img {
+                scale: 1.2;
+              }
+            }
+            @media screen and (max-width: 575px) {
+              height: 150px;
+            }
           }
+          .wpt {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 32px;
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+        button {
+          padding: 15px 25px 15px 25px;
+          background-color: #053f5c;
+          width: fit-content !important;
+          border: none;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          cursor: pointer;
+          border-radius: 5px;
+          p {
+            font-size: 16px;
+          }
+          margin-right: 50px;
         }
       }
     }

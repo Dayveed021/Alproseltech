@@ -33,10 +33,8 @@ const LandingPage = () => {
             <div className="hero-text">
               <p>
                 At Alproseltech, we're here to be your trusted technology
-                partner. We specialize indelivering cutting-edge solutions that
-                help businesses like yours stay ahead of the curve in today's
-                fast-paced digital landscape. Let us help you upgrade your
-                digital experience and achieve your goals.
+                partner. Let us help you upgrade your digital experience and
+                achieve your goals.
               </p>
               <button>
                 <p>Get Started</p>
@@ -130,10 +128,45 @@ const LandingPage = () => {
             </div>
             <div className="work-box">
               <div className="box-con">
-                <img src={p1} alt="" />
-                <h4></h4>
-                <p></p>
+                <div className="img">
+                  <img src={p1} alt="" />
+                </div>
+                <div className="wpt">
+                  <h5>Name Of Project</h5>
+                  <p>Web Design</p>
+                </div>
               </div>
+              <div className="box-con">
+                <div className="img">
+                  <img src={p2} alt="" />
+                </div>
+                <div className="wpt">
+                  <h5>Name Of Project</h5>
+                  <p>Web Design</p>
+                </div>
+              </div>
+              <div className="box-con">
+                <div className="img">
+                  <img src={p3} alt="" />
+                </div>
+                <div className="wpt">
+                  <h5>Name Of Project</h5>
+                  <p>Web Design</p>
+                </div>
+              </div>
+              <div className="box-con">
+                <div className="img">
+                  <img src={p4} alt="" />
+                </div>
+                <div className="wpt">
+                  <h5>Name Of Project</h5>
+                  <p>Web Design</p>
+                </div>
+              </div>
+              <button>
+                <p>More</p>
+                <FontAwesomeIcon icon={faAngleRight} bounce />
+              </button>
             </div>
           </div>
         </div>
