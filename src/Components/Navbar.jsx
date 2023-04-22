@@ -45,7 +45,10 @@ export const Navbar = () => {
         <button>Start a Project</button>
       </div>
       <div className="ham" onClick={togglemenu}>
-        <FontAwesomeIcon icon={toggle ? faXmark : faBars} size="2x" />
+        <FontAwesomeIcon
+          icon={toggle ? faXmark : faBars}
+          style={{ width: "20px", height: "30px" }}
+        />
       </div>
     </div>
   );

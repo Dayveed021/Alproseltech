@@ -37,9 +37,16 @@
         height: 50px;
         width: 200px;
         cursor: pointer;
-        @media screen and (max-width: 768px) {
-          width: 150px;
-        }
+      }
+    }
+    .nav {
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+    .null {
+      @media screen and (max-width: 800px) {
+        display: none;
       }
     }
     ul {
@@ -85,7 +92,7 @@
       }
     }
     @media screen and (max-width: 800px) {
-      padding: 0px 10px 0px 0px;
+      display: none;
     }
   }
   .ham {

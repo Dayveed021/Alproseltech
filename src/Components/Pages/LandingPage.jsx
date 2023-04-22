@@ -3,7 +3,16 @@ import { Navbar } from "../Navbar";
 import { Footer } from "../Footer";
 import "../../Styles/LandingPage.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleRight,
+  faChartLine,
+  faLaptopCode,
+  faLightbulb,
+} from "@fortawesome/free-solid-svg-icons";
+import p1 from "../../Images/p1.png";
+import p2 from "../../Images/p2.png";
+import p3 from "../../Images/p3.png";
+import p4 from "../../Images/p4.png";
 
 const LandingPage = () => {
   return (
@@ -14,8 +23,8 @@ const LandingPage = () => {
           <div className="hero-con">
             <header>
               <h1>
-                Empowering your Digital
-                <span> Strategy!</span>
+                Let's Build
+                <span> Together!</span>
               </h1>
               <p>
                 Web & App Design / Dev | Branding Solutions | Digital Marketing
@@ -23,15 +32,14 @@ const LandingPage = () => {
             </header>
             <div className="hero-text">
               <p>
-                At Alproseltech, we're here to be you{" "}
-                <span>trusted technology partner.</span> We specialize in{" "}
-                <span>delivering cutting-edge solutions</span> that help
-                businesses like yours stay ahead of the curve in today's
+                At Alproseltech, we're here to be your trusted technology
+                partner. We specialize indelivering cutting-edge solutions that
+                help businesses like yours stay ahead of the curve in today's
                 fast-paced digital landscape. Let us help you upgrade your
-                digital experience and <span>achieve your goals.</span>
+                digital experience and achieve your goals.
               </p>
               <button>
-                <p>Connect with us</p>
+                <p>Get Started</p>
                 <FontAwesomeIcon
                   icon={faAngleRight}
                   bounce
@@ -40,19 +48,14 @@ const LandingPage = () => {
               </button>
             </div>
           </div>
-          <div className="circle-1">Web and App Development</div>
-          <div className="circle-2">Branding Solutions</div>
-          <div className="circle-3">Digital Marketing</div>
         </div>
         <div className="about">
           <div className="about-con">
             <div className="abtitle-con">
-              <header>
-                <h4>About Alproseltech</h4>
-                <div className="about-line"></div>
-              </header>
               <div className="header-text">
-                <h2>We Deliver Trusted Digital Experiences</h2>
+                <h2>
+                  <hr /> At Alproseltech we Deliver Trusted Digital Experiences
+                </h2>
               </div>
               <button>Start a Project</button>
             </div>
@@ -72,8 +75,74 @@ const LandingPage = () => {
                 We are ever ready to take up even more challenging projects with
                 stringent deadlines and deliver to clients' satisfaction.
               </p>
-              <button>Start a Project</button>
+              <button>Learn More</button>
             </div>
+          </div>
+        </div>
+        <div className="service">
+          <div className="service-con">
+            <div className="ser-title">
+              <h3>What Do you need?</h3>
+              <h5>See how we can help you below</h5>
+            </div>
+            <div className="services">
+              <div className="service-box">
+                <div className="box">
+                  <FontAwesomeIcon icon={faLaptopCode} size="2x" />
+                  <h4>Web and Mobile App Design/Development</h4>
+                  <p>
+                    Every thriving business needs to be heard. In other to do
+                    that the business owner must ensure their business is
+                    online. And that is one of the reasons your business needs a
+                    website.
+                  </p>
+                  <button>Start your Project</button>
+                </div>
+                <div className="box">
+                  <FontAwesomeIcon icon={faChartLine} size="2x" />
+                  <h4>Digital Marketing</h4>
+                  <p>
+                    Every thriving business needs to be heard. In other to do
+                    that the business owner must ensure their business is
+                    online. And that is one of the reasons your business needs a
+                    website.
+                  </p>
+                  <button>Start your Project</button>
+                </div>
+                <div className="box">
+                  <FontAwesomeIcon icon={faLightbulb} size="2x" />
+                  <h4>Branding and solutions</h4>
+                  <p>
+                    Your brand should reflect what your business stands for and
+                    what sets it apart from your competitors – it expresses the
+                    qualities, strengths and 'personality' of your business.
+                  </p>
+                  <button>Start your Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="works">
+          <div className="works-con">
+            <div className="work-title">
+              <h2>See our previous works</h2>
+            </div>
+            <div className="work-box">
+              <div className="box-con">
+                <img src={p1} alt="" />
+                <h4></h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="testimonials">
+          <div className="testy-con">
+            <div className="testy-title">
+              <h2>Hear from our valued Customers</h2>
+            </div>
+            <div className="testy-box"></div>
           </div>
         </div>
       </div>

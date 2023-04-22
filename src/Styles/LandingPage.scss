@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/jii8opb.css");
+@import url("https://fonts.cdnfonts.com/css/satoshi");
 
 * {
   margin: 0px;
@@ -12,6 +13,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 100px;
   width: 100%;
 
   .hero {
@@ -19,13 +21,15 @@
     align-items: center;
     justify-content: center;
     padding: 100px 0px 100px 0px;
-    background-image: url("../Images/Hero-img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    // background-image: url("../Images/Hero-img.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    background-color: #211b1d;
     width: 100%;
     position: relative;
     overflow: hidden;
+    color: #fff;
     .hero-con {
       display: flex;
       align-items: center;
@@ -48,10 +52,11 @@
           line-height: 65px;
           font-size: 50px;
           font-weight: 900;
-          font-family: "poppins", sans-serif;
+          font-family: "Satoshi", sans-serif;
           @media screen and (max-width: 330px) {
             width: 100%;
-            font-size: 45px;
+            font-size: 30px;
+            line-height: 35px;
           }
           span {
             color: #053f5c;
@@ -94,98 +99,6 @@
         }
       }
     }
-
-    .circle-1 {
-      width: 100px;
-      height: 100px;
-      background-color: rgba(45, 87, 170, 0.4);
-      top: 10%;
-      left: 10%;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      animation: move 60s linear infinite;
-      position: absolute;
-      opacity: 1;
-      font-weight: 600;
-      text-align: center;
-      cursor: pointer;
-    }
-
-    .circle-2 {
-      width: 80px;
-      height: 80px;
-      background-color: rgba(245, 40, 40, 0.4);
-      top: 30%;
-      left: 60%;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      animation: move 60s linear infinite;
-      position: absolute;
-      z-index: 1;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    .circle-3 {
-      width: 120px;
-      height: 120px;
-      background-color: rgba(187, 255, 79, 0.4);
-      top: 60%;
-      left: 60%;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      animation: move 60s linear infinite;
-      position: absolute;
-      z-index: 1;
-      font-weight: 600;
-      text-align: center;
-      cursor: pointer;
-    }
-
-    @keyframes move {
-      0% {
-        transform: translate3d(0, 0, 0);
-      }
-      10% {
-        transform: translate3d(50px, -100px, 0);
-      }
-      20% {
-        transform: translate3d(150px, -50px, 0);
-      }
-      30% {
-        transform: translate3d(-50px, 100px, 0);
-      }
-      40% {
-        transform: translate3d(0, 125px, 0);
-      }
-      50% {
-        transform: translate3d(50px, 100px, 0);
-      }
-      60% {
-        transform: translate3d(-75px, -150px, 0);
-      }
-      70% {
-        transform: translate3d(100px, 50px, 0);
-      }
-      80% {
-        transform: translate3d(-200px, 150px, 0);
-      }
-      90% {
-        transform: translate3d(-50px, -100px, 0);
-      }
-      100% {
-        transform: translate3d(0, 0, 0);
-      }
-    }
   }
   .about {
     width: 100%;
@@ -208,37 +121,36 @@
         justify-content: flex-start;
         flex-direction: column;
         gap: 20px;
-        header {
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          // text-align: left;
-          gap: 10px;
-          .about-line {
-            width: 80px;
-            height: 2px;
-            border-radius: 10px;
-            background-color: #000;
+        .header-text {
+          width: 70%;
+          h2 {
+            hr {
+              height: 2px;
+              border-radius: 10px;
+              background-color: #000;
+              margin-bottom: 10px;
+              width: 60px;
+            }
           }
         }
-        button {
-          background-color: #fff;
-          padding: 15px 25px 15px 25px;
-          color: #053f5c;
-          border: none;
-          border-radius: 10px;
-          font-weight: 600;
-          cursor: pointer;
-          box-shadow: 0px 0px 0px 2px inset rgb(5, 63, 92);
+      }
+      button {
+        background-color: #fff;
+        padding: 15px 25px 15px 25px;
+        color: #053f5c;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0px 0px 0px 2px inset rgb(5, 63, 92);
 
-          transition: background-color 0.3s ease;
-          &:hover {
-            background-color: #053f5c;
-            color: #fff;
-          }
-          @media screen and (max-width: 768px) {
-            display: none;
-          }
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #053f5c;
+          color: #fff;
+        }
+        @media screen and (max-width: 768px) {
+          display: none;
         }
       }
       .about-text {
@@ -255,23 +167,121 @@
           line-height: 28px;
         }
         button {
-          display: none;
+          display: block;
+          background-color: #fff;
+          padding: 15px 25px 15px 25px;
+          color: #053f5c;
+          border: none;
+          border-radius: 10px;
+          font-weight: 600;
+          cursor: pointer;
+          box-shadow: 0px 0px 0px 2px inset rgb(5, 63, 92);
+
+          transition: background-color 0.3s ease;
+          &:hover {
+            background-color: #053f5c;
+            color: #fff;
+          }
           @media screen and (max-width: 768px) {
             display: block;
-            background-color: #fff;
-            padding: 15px 25px 15px 25px;
-            color: #053f5c;
-            border: none;
-            border-radius: 10px;
-            font-weight: 600;
-            cursor: pointer;
-            box-shadow: 0px 0px 0px 2px inset rgb(5, 63, 92);
+          }
+        }
+      }
+    }
+  }
+  .service {
+    width: 100%;
+    .service-con {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 30px;
+      width: 100%;
+      .ser-title {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+      }
+      .services {
+        width: 100%;
+        padding: 0px 0px 50px 0px;
+        .service-box {
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-around;
+          @media screen and (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+            gap: 35px;
+          }
 
-            transition: background-color 0.3s ease;
-            &:hover {
-              background-color: #053f5c;
-              color: #fff;
+          .box {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 10px;
+            height: fit-content;
+            text-align: left;
+            width: 25%;
+            padding: 20px;
+            transition: color 1s ease, background-color 0.3s ease,
+              width 0.3s ease, height 0.3s ease, button 0.3s ease;
+            cursor: pointer;
+            button {
+              background-color: #fff;
+              padding: 15px 25px 15px 25px;
+              color: #053f5c;
+              border: none;
+              border-radius: 10px;
+              font-weight: 600;
+              cursor: pointer;
+              box-shadow: 0px 0px 0px 2px inset rgb(5, 63, 92);
+
+              transition: background-color 0.3s ease;
+              &:hover {
+                background-color: #053f5c;
+                color: #fff;
+              }
             }
+            p {
+              line-height: 25px;
+            }
+            @media screen and (max-width: 800px) {
+              width: 85%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .works {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .works-con {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      .work-box {
+        // display: flex;
+        // align-items: center;
+        // // justify-content: space-between;
+        .box-con {
+          border-radius: 10px;
+          img {
+            height: 300px;
+            width: 200px;
           }
         }
       }
