@@ -26,7 +26,7 @@
     // background-repeat: no-repeat;
     // background-size: cover;
     // background-position: center;
-    background-color: #211b1d;
+    background-color: #1e1f21;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -36,8 +36,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      width: 65%;
-      text-align: center;
+      width: 50%;
       gap: 30px;
       @media screen and (max-width: 768px) {
         width: 85%;
@@ -47,10 +46,10 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        text-align: center;
         gap: 20px;
         h1 {
           line-height: 55px;
+          text-align: center;
           font-size: 50px;
           font-weight: 900;
           font-family: "Satoshi", sans-serif;
@@ -72,11 +71,11 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        text-align: center;
         gap: 50px;
       }
       p {
         line-height: 28px;
+        text-align: center;
         span {
           background-color: black;
           padding: 3px;
@@ -159,8 +158,16 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 65%;
-        gap: 20px;
+        width: 100%;
+        border-radius: 0px 0px 50px 50px;
+        .text-con {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 65%;
+          gap: 20px;
+        }
         @media screen and (max-width: 768px) {
           width: 90%;
         }
@@ -197,7 +204,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      gap: 30px;
+      gap: 50px;
       width: 100%;
       .ser-title {
         text-align: center;
@@ -223,7 +230,7 @@
         .service-box {
           width: 100%;
           display: flex;
-          align-items: flex-start;
+          align-items: center;
           justify-content: space-around;
           @media screen and (max-width: 768px) {
             flex-direction: column;
@@ -232,39 +239,103 @@
           }
 
           .box {
+            position: relative; /* Make sure the overlay is positioned relative to the box */
             display: flex;
             align-items: flex-start;
-            justify-content: flex-start;
-            flex-direction: column;
-            gap: 10px;
+            justify-content: space-around;
+            width: fit-content;
+            border-radius: 5px;
             height: fit-content;
-            text-align: left;
-            width: 25%;
-            padding: 20px;
-            transition: color 1s ease, background-color 0.3s ease,
-              width 0.3s ease, height 0.3s ease, button 0.3s ease;
-            cursor: pointer;
-            button {
-              background-color: #fff;
-              padding: 15px 25px 15px 25px;
-              color: #053f5c;
-              border: none;
-              border-radius: 10px;
-              font-weight: 600;
-              cursor: pointer;
-              box-shadow: 0px 0px 0px 2px inset rgb(5, 63, 92);
+            overflow: hidden;
 
-              transition: background-color 0.3s ease;
-              &:hover {
+            .box-main {
+              position: relative; /* Make sure the overlay is positioned relative to the box-main */
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-around;
+              flex-direction: column;
+              overflow: hidden;
+
+              img {
+                width: 355px;
+                height: 300px;
+                transition: opacity 0.3s ease; /* Add a transition to the image */
+              }
+
+              .type {
+                margin-top: -50px;
+                border-radius: 50px;
                 background-color: #053f5c;
                 color: #fff;
+                width: 100%;
+                text-align: center;
+                font-weight: 700;
+                font-size: 20px;
+                padding: 10px;
+                transition: opacity 0.3s ease; /* Add a transition to the type */
               }
             }
-            p {
-              line-height: 25px;
+
+            .overlay {
+              position: absolute; /* Position the overlay over the box */
+              top: 0;
+              left: 0;
+              width: 95%;
+              // height: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              padding: 20px 20px 20px 10px;
+              opacity: 0; /* Hide the overlay by default */
+              transition: opacity 0.7s ease; /* Add a transition to the overlay */
+              background-color: rgba(
+                0,
+                0,
+                0,
+                0.8
+              ); /* Add a semi-transparent background color */
+              color: #ccc;
+              button {
+                display: block;
+                background-color: #fff;
+                padding: 15px 25px 15px 25px;
+                border: none;
+                color: #053f5c;
+                border-radius: 10px;
+                font-weight: 600;
+                cursor: pointer;
+                box-shadow: 0px 0px 0px 2px inset rgb(5, 63, 92);
+
+                transition: background-color 0.3s ease;
+                &:hover {
+                  background-color: #053f5c;
+                  color: #fff;
+                }
+              }
+              p {
+                line-height: 24px;
+              }
             }
+
+            cursor: pointer;
+
+            &:hover {
+              .box-main {
+                opacity: 1; /* Hide the box-main on hover */
+              }
+
+              .overlay {
+                opacity: 2; /* Show the overlay on hover */
+              }
+            }
+
             @media screen and (max-width: 800px) {
-              width: 85%;
+              width: fit-content;
+              line-height: 30px;
             }
           }
         }
@@ -283,10 +354,14 @@
       flex-direction: column;
       gap: 20px;
       width: 100%;
+      border: 10px;
+      overflow: hidden;
+      background-color: #206880;
+      padding: 20px;
+      // box-shadow: ;
       .work-title {
         display: flex;
         align-items: flex-start;
-        // justify-content: flex-start;
         flex-direction: column;
         gap: 10px;
         width: 100%;
@@ -297,6 +372,7 @@
           background-color: #053f5c;
           margin-bottom: 5px;
           border-radius: 10px;
+          border: none;
         }
         p {
           font-weight: 500;
@@ -306,8 +382,14 @@
           width: 50%;
           line-height: 40px;
           span {
-            color: #053f5c;
+            color: white;
           }
+          @media screen and (max-width: 575px) {
+            width: 80%;
+          }
+        }
+        @media screen and (max-width: 575px) {
+          margin-left: 30px;
         }
       }
       .work-box {

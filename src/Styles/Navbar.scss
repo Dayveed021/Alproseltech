@@ -14,7 +14,7 @@
   width: 100%;
   position: sticky;
   top: 0px;
-  background-color: #fff;
+  background-color: #1f2632;
   z-index: 1000;
 
   .nav-con {
@@ -57,7 +57,7 @@
       list-style: none;
       .nav-items {
         text-decoration: none;
-        color: black;
+        color: white;
         font-size: 20px;
         cursor: pointer;
         transition: color 0.3s ease;
