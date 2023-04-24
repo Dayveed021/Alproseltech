@@ -81,7 +81,7 @@ const LandingPage = () => {
           <div className="service-con">
             <div className="ser-title">
               <h3>What Do you need?</h3>
-              <h5>See how we can help you below</h5>
+              <h2>We offer exclusive services</h2>
             </div>
             <div className="services">
               <div className="service-box">
@@ -124,7 +124,13 @@ const LandingPage = () => {
         <div className="works">
           <div className="works-con">
             <div className="work-title">
-              <h2>See our previous works</h2>
+              <p>
+                <hr />
+                Our Projects
+              </p>
+              <h2>
+                Our Outstanding Latest <span>Projects</span> & Works
+              </h2>
             </div>
             <div className="work-box">
               <div className="box-con">
