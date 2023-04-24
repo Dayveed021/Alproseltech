@@ -17,6 +17,7 @@ import b1 from "../../Images/b1.jpg";
 import b2 from "../../Images/b2.jpg";
 import b3 from "../../Images/b3.jpg";
 import ap from "../../Images/ap.png";
+import star from "../../Images/star.png";
 
 const LandingPage = () => {
   return (
@@ -216,6 +217,13 @@ const LandingPage = () => {
                   Rem veritatis fugit ratione obcaecati reprehenderit a expedita
                   ducimus vero ab magni?
                 </p>
+                <div className="rating">
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                </div>
               </div>
               <div className="testy-main">
                 <img src={ap} alt="" />
@@ -225,6 +233,13 @@ const LandingPage = () => {
                   Rem veritatis fugit ratione obcaecati reprehenderit a expedita
                   ducimus vero ab magni?
                 </p>
+                <div className="rating">
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                </div>
               </div>
               <div className="testy-main">
                 <img src={ap} alt="" />
@@ -234,8 +249,18 @@ const LandingPage = () => {
                   Rem veritatis fugit ratione obcaecati reprehenderit a expedita
                   ducimus vero ab magni?
                 </p>
+                <div className="rating">
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                </div>
               </div>
             </div>
+            <button>
+              View More <FontAwesomeIcon icon={faAngleRight} bounce />
+            </button>
           </div>
         </div>
       </div>
