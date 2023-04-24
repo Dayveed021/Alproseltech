@@ -459,4 +459,51 @@
       }
     }
   }
+  .testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .testy-con {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+      .testy-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-direction: column;
+        h3 {
+          padding: 10px 20px 10px 20px;
+          background: linear-gradient(to right, #053f5c, #379683);
+          border-radius: 10px;
+          color: white;
+        }
+        h2 {
+          font-size: 30px;
+        }
+      }
+      .testy-box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 15px;
+        .testy-main {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 10px;
+          line-height: 28px;
+          width: 25%;
+          padding: 10px;
+          border-radius: 10px;
+          background-color: #ccc;
+        }
+      }
+    }
+  }
 }

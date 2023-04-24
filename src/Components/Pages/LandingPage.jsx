@@ -16,6 +16,7 @@ import p4 from "../../Images/p4.png";
 import b1 from "../../Images/b1.jpg";
 import b2 from "../../Images/b2.jpg";
 import b3 from "../../Images/b3.jpg";
+import ap from "../../Images/ap.png";
 
 const LandingPage = () => {
   return (
@@ -203,9 +204,38 @@ const LandingPage = () => {
         <div className="testimonials">
           <div className="testy-con">
             <div className="testy-title">
+              <h3>Testimonials</h3>
               <h2>Hear from our valued Customers</h2>
             </div>
-            <div className="testy-box"></div>
+            <div className="testy-box">
+              <div className="testy-main">
+                <img src={ap} alt="" />
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  non facilis est veritatis ducimus quia officia aliquam cumque.
+                  Rem veritatis fugit ratione obcaecati reprehenderit a expedita
+                  ducimus vero ab magni?
+                </p>
+              </div>
+              <div className="testy-main">
+                <img src={ap} alt="" />
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  non facilis est veritatis ducimus quia officia aliquam cumque.
+                  Rem veritatis fugit ratione obcaecati reprehenderit a expedita
+                  ducimus vero ab magni?
+                </p>
+              </div>
+              <div className="testy-main">
+                <img src={ap} alt="" />
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  non facilis est veritatis ducimus quia officia aliquam cumque.
+                  Rem veritatis fugit ratione obcaecati reprehenderit a expedita
+                  ducimus vero ab magni?
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
