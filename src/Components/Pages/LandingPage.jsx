@@ -18,6 +18,7 @@ import b2 from "../../Images/b2.jpg";
 import b3 from "../../Images/b3.jpg";
 import ap from "../../Images/ap.png";
 import star from "../../Images/star.png";
+import user from "../../Images/user.jpg";
 
 const LandingPage = () => {
   return (
@@ -224,21 +225,14 @@ const LandingPage = () => {
                   <img src={star} alt="star" />
                   <img src={star} alt="star" />
                 </div>
-              </div>
-              <div className="testy-main">
-                <img src={ap} alt="" />
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
-                  non facilis est veritatis ducimus quia officia aliquam cumque.
-                  Rem veritatis fugit ratione obcaecati reprehenderit a expedita
-                  ducimus vero ab magni?
-                </p>
-                <div className="rating">
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
+                <div className="writer-dets">
+                  <div className="writer-img">
+                    <img src={user} alt="" />
+                  </div>
+                  <div className="write-dets">
+                    <h5>Adelanke Adelanke</h5>
+                    <span>CEO of SUNPOWER</span>
+                  </div>
                 </div>
               </div>
               <div className="testy-main">
@@ -255,6 +249,40 @@ const LandingPage = () => {
                   <img src={star} alt="star" />
                   <img src={star} alt="star" />
                   <img src={star} alt="star" />
+                </div>
+                <div className="writer-dets">
+                  <div className="writer-img">
+                    <img src={user} alt="" />
+                  </div>
+                  <div className="write-dets">
+                    <h5>Adelanke Adelanke</h5>
+                    <span>CEO of SUNPOWER</span>
+                  </div>
+                </div>
+              </div>
+              <div className="testy-main">
+                <img src={ap} alt="" />
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  non facilis est veritatis ducimus quia officia aliquam cumque.
+                  Rem veritatis fugit ratione obcaecati reprehenderit a expedita
+                  ducimus vero ab magni?
+                </p>
+                <div className="rating">
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                </div>
+                <div className="writer-dets">
+                  <div className="writer-img">
+                    <img src={user} alt="" />
+                  </div>
+                  <div className="write-dets">
+                    <h5>Adelanke Adelanke</h5>
+                    <span>CEO of SUNPOWER</span>
+                  </div>
                 </div>
               </div>
             </div>
