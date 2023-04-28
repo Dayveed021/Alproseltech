@@ -19,6 +19,52 @@ import b3 from "../../Images/b3.jpg";
 import ap from "../../Images/ap.png";
 import star from "../../Images/star.png";
 import user from "../../Images/user.jpg";
+import skilled from "../../Images/Skilled.png";
+import custom from "../../Images/Custom.png";
+import quality from "../../Images/Quality.png";
+import affordable from "../../Images/Affordable.png";
+import support from "../../Images/Support.png";
+import { SwiperSlide, Swiper } from "swiper/react";
+import "swiper/swiper-bundle.min.css";
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper";
+
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+const writer = [
+  {
+    id: 1,
+    testimony:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, aut fugiat molestias quia vitae veniam harum iure explicabo cupiditate ratione dolorum dolorem recusandae id quisquam modi perspiciatis et repellat eligendi?",
+    picture: user,
+    name: "Adelank Sam",
+    title: "CEO of SUNPOWER",
+  },
+  {
+    id: 2,
+    testimony:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, aut fugiat molestias quia vitae veniam harum iure explicabo cupiditate ratione dolorum dolorem recusandae id quisquam modi perspiciatis et repellat eligendi?",
+    picture: user,
+    name: "Victor Gabriel",
+    title: "CEO of OBITEX",
+  },
+  {
+    id: 3,
+    testimony:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, aut fugiat molestias quia vitae veniam harum iure explicabo cupiditate ratione dolorum dolorem recusandae id quisquam modi perspiciatis et repellat eligendi?",
+    picture: user,
+    name: "Jamz Ofotori",
+    title: "CEO of DRIVEWAY",
+  },
+];
 
 const LandingPage = () => {
   return (
@@ -146,6 +192,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
+            <button>View more services</button>
           </div>
         </div>
         <div className="works">
@@ -210,85 +257,97 @@ const LandingPage = () => {
               <h2>Hear from our valued Customers</h2>
             </div>
             <div className="testy-box">
-              <div className="testy-main">
-                <img src={ap} alt="" />
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
-                  non facilis est veritatis ducimus quia officia aliquam cumque.
-                  Rem veritatis fugit ratione obcaecati reprehenderit a expedita
-                  ducimus vero ab magni?
-                </p>
-                <div className="rating">
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                </div>
-                <div className="writer-dets">
-                  <div className="writer-img">
-                    <img src={user} alt="" />
-                  </div>
-                  <div className="write-dets">
-                    <h5>Adelanke Adelanke</h5>
-                    <span>CEO of SUNPOWER</span>
+              {writer.map((writer) => (
+                <div key={writer.id} className="testy-main">
+                  <img src={ap} alt="" />
+                  <p>{writer.testimony}</p>
+                  <div className="writer-dets">
+                    <div className="writer-img">
+                      <img src={writer.picture} alt="" />
+                    </div>
+                    <div className="write-dets">
+                      <h4>{writer.name}</h4>
+                      <span>{writer.title}</span>
+                    </div>
                   </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="why">
+          <div className="why-con">
+            <div className="why-title">
+              <div className="why-ben">
+                <div className="why-lines">
+                  <div className="whyline-main"></div>
+                  <hr />
+                </div>
+                <h3>Our Benefits</h3>
               </div>
-              <div className="testy-main">
-                <img src={ap} alt="" />
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
-                  non facilis est veritatis ducimus quia officia aliquam cumque.
-                  Rem veritatis fugit ratione obcaecati reprehenderit a expedita
-                  ducimus vero ab magni?
-                </p>
-                <div className="rating">
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                </div>
-                <div className="writer-dets">
-                  <div className="writer-img">
-                    <img src={user} alt="" />
+              <h2>Why Choose Us?</h2>
+            </div>
+            <div className="e-ben">
+              <div className="eben-con">
+                <div className="eben-main">
+                  <div className="bens">
+                    <img src={skilled} alt="" />
+                    <div className="bens-text">
+                      <h3>Experienced Team</h3>
+                      <p>
+                        Our team of developers has years of experience in
+                        building websites and mobile applications that meet the
+                        unique needs of our clients.
+                      </p>
+                    </div>
                   </div>
-                  <div className="write-dets">
-                    <h5>Adelanke Adelanke</h5>
-                    <span>CEO of SUNPOWER</span>
+                  <div className="bens">
+                    <img src={custom} alt="" />
+                    <div className="bens-text">
+                      <h3>Custom Solutions</h3>
+                      <p>
+                        Our team of developers has years of experience in
+                        building websites and mobile applications that meet the
+                        unique needs of our clients.
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="testy-main">
-                <img src={ap} alt="" />
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
-                  non facilis est veritatis ducimus quia officia aliquam cumque.
-                  Rem veritatis fugit ratione obcaecati reprehenderit a expedita
-                  ducimus vero ab magni?
-                </p>
-                <div className="rating">
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                  <img src={star} alt="star" />
-                </div>
-                <div className="writer-dets">
-                  <div className="writer-img">
-                    <img src={user} alt="" />
+                  <div className="bens">
+                    <img src={quality} alt="" />
+                    <div className="bens-text">
+                      <h3>Quality Assurance</h3>
+                      <p>
+                        Our team of developers has years of experience in
+                        building websites and mobile applications that meet the
+                        unique needs of our clients.
+                      </p>
+                    </div>
                   </div>
-                  <div className="write-dets">
-                    <h5>Adelanke Adelanke</h5>
-                    <span>CEO of SUNPOWER</span>
+                  <div className="bens">
+                    <img src={affordable} alt="" />
+                    <div className="bens-text">
+                      <h3>Affordability</h3>
+                      <p>
+                        Our team of developers has years of experience in
+                        building websites and mobile applications that meet the
+                        unique needs of our clients.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bens">
+                    <img src={support} alt="" />
+                    <div className="bens-text">
+                      <h3>24/7 Support</h3>
+                      <p>
+                        Our team of developers has years of experience in
+                        building websites and mobile applications that meet the
+                        unique needs of our clients.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <button>
-              View More <FontAwesomeIcon icon={faAngleRight} bounce />
-            </button>
           </div>
         </div>
       </div>
