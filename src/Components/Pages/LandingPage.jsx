@@ -17,27 +17,12 @@ import b1 from "../../Images/b1.jpg";
 import b2 from "../../Images/b2.jpg";
 import b3 from "../../Images/b3.jpg";
 import ap from "../../Images/ap.png";
-import star from "../../Images/star.png";
 import user from "../../Images/user.jpg";
 import skilled from "../../Images/Skilled.png";
 import custom from "../../Images/Custom.png";
 import quality from "../../Images/Quality.png";
 import affordable from "../../Images/Affordable.png";
 import support from "../../Images/Support.png";
-import { SwiperSlide, Swiper } from "swiper/react";
-import "swiper/swiper-bundle.min.css";
-import SwiperCore, {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper";
-
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
-
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const writer = [
   {
