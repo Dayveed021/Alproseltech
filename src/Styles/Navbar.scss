@@ -84,7 +84,7 @@
       transition: box-shadow 0.3s ease;
       &:hover {
         background-color: #fff;
-        box-shadow: 0px 0px 0px 2px inset rgb(5, 63, 92);
+        box-shadow: 0px 0px 0px 2px inset red;
         color: #053f5c;
       }
       @media screen and (max-width: 800px) {

@@ -23,6 +23,7 @@ import custom from "../../Images/Custom.png";
 import quality from "../../Images/Quality.png";
 import affordable from "../../Images/Affordable.png";
 import support from "../../Images/Support.png";
+import Typing from "react-typing-effect";
 
 const writer = [
   {
@@ -147,13 +148,13 @@ const LandingPage = () => {
                     <div className="type">Branding Solutions</div>
                   </div>
                   <div className="overlay">
-                    <FontAwesomeIcon icon={faLaptopCode} size="2x" />
-                    <h4>Web and Mobile App Design/Development</h4>
+                    <FontAwesomeIcon icon={faLightbulb} size="2x" />
+                    <h4>Branding Solutions</h4>
                     <p>
-                      Every thriving business needs to be heard. In other to do
-                      that the business owner must ensure their business is
-                      online. And that is one of the reasons your business needs
-                      a website.
+                      Your brand should reflect what your business stands for
+                      and what sets it apart from your competitors – it
+                      expresses the qualities, strengths and 'personality' of
+                      your business.
                     </p>
                     <button>Start your Project</button>
                   </div>
@@ -164,20 +165,20 @@ const LandingPage = () => {
                     <div className="type">Digital Marketing</div>
                   </div>
                   <div className="overlay">
-                    <FontAwesomeIcon icon={faLaptopCode} size="2x" />
-                    <h4>Web and Mobile App Design/Development</h4>
+                    <FontAwesomeIcon icon={faChartLine} size="2x" />
+                    <h4>Digital Marketing</h4>
                     <p>
-                      Every thriving business needs to be heard. In other to do
-                      that the business owner must ensure their business is
-                      online. And that is one of the reasons your business needs
-                      a website.
+                      By using a combination of our digital marketing strategies
+                      such as SEO & social media marketing, it is possible to
+                      drive more traffic to your website or business, increase
+                      brand awareness, and improve overall conversion rates.
                     </p>
                     <button>Start your Project</button>
                   </div>
                 </div>
               </div>
             </div>
-            <button>View more services</button>
+            <button className="view-btn">View more services</button>
           </div>
         </div>
         <div className="works">
@@ -332,6 +333,41 @@ const LandingPage = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="why-auto">
+            <div className="auto-text">
+              <h2>
+                We are here to provide you with{" "}
+                <Typing
+                  speed={50}
+                  eraseDelay={1000}
+                  loop={true}
+                  className="typed-text"
+                  text={[
+                    " Quality service",
+                    " Fast completion",
+                    " Affordable price",
+                  ]}
+                />
+              </h2>
+            </div>
+            <div className="auto-text-2">
+              <h2>
+                We provide you with{" "}
+                <Typing
+                  speed={50}
+                  eraseDelay={1000}
+                  loop={true}
+                  className="typed-text"
+                  text={[
+                    "  Quality service",
+                    " Fast completion",
+                    " Affordable price",
+                    "24/7 Support",
+                  ]}
+                />
+              </h2>
             </div>
           </div>
         </div>
