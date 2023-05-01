@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar } from "../Navbar";
 import { Footer } from "../Footer";
 import "../../Styles/LandingPage.scss";
@@ -53,6 +53,29 @@ const writer = [
 ];
 
 const LandingPage = () => {
+  // const [current, setCurrent] = useState(0);
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrent((current) =>
+  //       current === writer.length - 1 ? 0 : current + 1
+  //     );
+  //   }, 5000);
+
+  //   return () => clearInterval(interval);
+  // }, [writer.length]);
+
+  // const handlePaginationClick = (index) => {
+  //   setCurrent(index);
+  // };
+
+  // const [toggle, setToggle] = useState(false);
+
+  // const togglemenu = () => {
+  //   console.log("clicked");
+  //   setToggle(!toggle);
+  // };
+
   return (
     <>
       <Navbar />
@@ -259,6 +282,15 @@ const LandingPage = () => {
                 </div>
               ))}
             </div>
+            <div className="pagination">
+              {/* {writer.map((_, index) => (
+                <FontAwesomeIcon
+                key={index}
+                icon={toggle === index ? faDotCircle : faCircle}
+                onClick={() => handlePaginationClick(index) togglemenu()}
+              />
+              ))} */}
+            </div>
           </div>
         </div>
         <div className="why">
@@ -354,7 +386,7 @@ const LandingPage = () => {
             </div>
             <div className="auto-text-2">
               <h2>
-                We provide you with{" "}
+                We provide you with <br />
                 <Typing
                   speed={50}
                   eraseDelay={1000}
