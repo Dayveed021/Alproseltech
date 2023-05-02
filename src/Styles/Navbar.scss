@@ -10,7 +10,7 @@
   font-family: "poppins", sans-serif;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   position: sticky;
   top: 0px;
@@ -19,14 +19,13 @@
 
   .nav-con {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 56%;
-    padding: 15px 0px 15px 80px;
+    width: 100%;
+    padding: 15px 0px 15px 0px;
     @media screen and (max-width: 768px) {
-      justify-content: flex-start;
-      padding: 10px 0px 10px 20px;
-      width: 100%;
+      justify-content: space-between;
+      padding: 15px 20px 15px 20px;
     }
     .ham-logo {
       display: flex;
@@ -72,7 +71,6 @@
     }
   }
   .nav-btn {
-    padding: 15px 80px 15px 0px;
     button {
       padding: 15px 30px 15px 30px;
       color: white;
@@ -97,7 +95,7 @@
   }
   .ham {
     display: none;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
       display: block;
       padding: 10px 20px 10px 0px;
     }

@@ -25,24 +25,30 @@ export const Navbar = () => {
           <ul>
             <li>
               <NavLink to="/" className="nav-items">
-                Home
+                HOME
               </NavLink>
             </li>
             <li>
               <NavLink to="/" className="nav-items">
-                Services
+                SERVICES
               </NavLink>
             </li>
             <li>
               <NavLink to="/" className="nav-items">
-                Work
+                WORKS
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/" className="nav-items">
+                BLOG
               </NavLink>
             </li>
           </ul>
         </div>
-      </div>
-      <div className="nav-btn">
-        <button>Start a Project</button>
+
+        <div className="nav-btn">
+          <button>Start a Project</button>
+        </div>
       </div>
       <div className="ham" onClick={togglemenu}>
         <FontAwesomeIcon
