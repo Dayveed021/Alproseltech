@@ -5,6 +5,7 @@ import "../../Styles/LandingPage.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleRight,
+  faArrowRight,
   faChartLine,
   faLaptopCode,
   faLightbulb,
@@ -53,29 +54,6 @@ const writer = [
 ];
 
 const LandingPage = () => {
-  // const [current, setCurrent] = useState(0);
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrent((current) =>
-  //       current === writer.length - 1 ? 0 : current + 1
-  //     );
-  //   }, 5000);
-
-  //   return () => clearInterval(interval);
-  // }, [writer.length]);
-
-  // const handlePaginationClick = (index) => {
-  //   setCurrent(index);
-  // };
-
-  // const [toggle, setToggle] = useState(false);
-
-  // const togglemenu = () => {
-  //   console.log("clicked");
-  //   setToggle(!toggle);
-  // };
-
   return (
     <>
       <Navbar />
@@ -400,6 +378,36 @@ const LandingPage = () => {
                   ]}
                 />
               </h2>
+            </div>
+          </div>
+        </div>
+        <div className="blog">
+          <div className="blog-title">
+            <h3>Our Blog</h3>
+            <h2>
+              News & <span>Updates</span>
+            </h2>
+          </div>
+          <div className="blog-desc">
+            <p>
+              Our blog offers engaging content for all interests, with a focus
+              on creativity, expertise, and community. User-friendly and
+              personalized, with a commitment to transparency and social
+              responsibility, we make a positive impact.
+            </p>
+            <button>
+              <span>All Blogs</span>
+              <FontAwesomeIcon icon={faArrowRight} />
+            </button>
+          </div>
+          <div className="blogs">
+            <div className="blogs-con">
+              <div className="blog-main">
+                <img src="" alt="" />
+              </div>
+              <div className="blog-main">
+                <img src="" alt="" />
+              </div>
             </div>
           </div>
         </div>
