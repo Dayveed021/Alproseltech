@@ -21,7 +21,7 @@ export const Navbar = () => {
             <img src={Logo} alt="Alproseltech" />
           </Link>
         </div>
-        <nav className={toggle ? "nav" : null}>
+        <div className={toggle ? "nav" : "null"}>
           <ul>
             <li>
               <NavLink to="/" className="nav-items">
@@ -35,7 +35,7 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink to="/" className="nav-items">
-                WORKS
+                WORK
               </NavLink>
             </li>
             <li>
@@ -44,11 +44,10 @@ export const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-        </nav>
-
-        <div className="nav-btn">
-          <button>Start a Project</button>
         </div>
+      </div>
+      <div className="nav-btn">
+        <button>Start a Project</button>
       </div>
       <div className="ham" onClick={togglemenu}>
         <FontAwesomeIcon
