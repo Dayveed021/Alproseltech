@@ -16,12 +16,12 @@ export const Navbar = () => {
   return (
     <div className="navbar">
       <div className="nav-con">
-        <div className="ham-logo" onClick={togglemenu}>
+        <div className="ham-logo">
           <Link to="/">
             <img src={Logo} alt="Alproseltech" />
           </Link>
         </div>
-        <div className={toggle ? "nav" : "null"}>
+        <nav className={toggle ? "nav" : null}>
           <ul>
             <li>
               <NavLink to="/" className="nav-items">
@@ -44,7 +44,7 @@ export const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-        </div>
+        </nav>
 
         <div className="nav-btn">
           <button>Start a Project</button>
