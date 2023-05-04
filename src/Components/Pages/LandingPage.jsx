@@ -467,6 +467,9 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+        <div className="contact">
+          <div className="contact-con"></div>
+        </div>
       </div>
       <Footer />
     </>
