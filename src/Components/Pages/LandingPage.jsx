@@ -8,6 +8,7 @@ import {
   faArrowRight,
   faCalendar,
   faChartLine,
+  faComments,
   faLaptopCode,
   faLightbulb,
   faUser,
@@ -468,7 +469,16 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="contact">
-          <div className="contact-con"></div>
+          <div className="contact-con">
+            <div className="contact-text">
+              <FontAwesomeIcon icon={faComments} size="4x" color="white" />
+              <div className="c-main-text">
+                <p>NEED ANY CONSULTATIONS?</p>
+                <h2>We are ready to help you</h2>
+              </div>
+            </div>
+            <button>Contact Us</button>
+          </div>
         </div>
       </div>
       <Footer />
