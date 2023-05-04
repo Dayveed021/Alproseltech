@@ -6,9 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleRight,
   faArrowRight,
+  faCalendar,
   faChartLine,
   faLaptopCode,
   faLightbulb,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import p1 from "../../Images/p1.png";
 import p2 from "../../Images/p2.png";
@@ -24,6 +26,10 @@ import custom from "../../Images/Custom.png";
 import quality from "../../Images/Quality.png";
 import affordable from "../../Images/Affordable.png";
 import support from "../../Images/Support.png";
+import blog1 from "../../Images/Blog-image1.jpg";
+import blog2 from "../../Images/Blogimage-2.png";
+import blog3 from "../../Images/blog3.jpg";
+import admin from "../../Images/admin.jpg";
 import Typing from "react-typing-effect";
 
 const writer = [
@@ -260,15 +266,6 @@ const LandingPage = () => {
                 </div>
               ))}
             </div>
-            <div className="pagination">
-              {/* {writer.map((_, index) => (
-                <FontAwesomeIcon
-                key={index}
-                icon={toggle === index ? faDotCircle : faCircle}
-                onClick={() => handlePaginationClick(index) togglemenu()}
-              />
-              ))} */}
-            </div>
           </div>
         </div>
         <div className="why">
@@ -403,10 +400,69 @@ const LandingPage = () => {
           <div className="blogs">
             <div className="blogs-con">
               <div className="blog-main">
-                <img src="" alt="" />
+                <img src={blog1} alt="" />
+                <div className="blog-desc">
+                  <p>Business</p>
+                  <h2>
+                    How Having a Website or Mobile App Can Boost Your Bottom
+                    Line
+                  </h2>
+                </div>
+                <div className="blog-writer">
+                  <div className="admin">
+                    <img src={admin} alt="" />
+                    <div className="admin-dets">
+                      <FontAwesomeIcon icon={faUser} />
+                      <h5>Admin</h5>
+                    </div>
+                  </div>
+                  <div className="time">
+                    <FontAwesomeIcon icon={faCalendar} color="#053f5c" />
+                    <p>01, April 2023</p>
+                  </div>
+                </div>
               </div>
               <div className="blog-main">
-                <img src="" alt="" />
+                <img src={blog2} alt="" />
+                <div className="blog-desc">
+                  <p>Artificial Intelligence</p>
+                  <h2>
+                    How AI Can Transform Your Business and Scale Up Your Profits
+                  </h2>
+                </div>
+                <div className="blog-writer">
+                  <div className="admin">
+                    <img src={admin} alt="" />
+                    <div className="admin-dets">
+                      <FontAwesomeIcon icon={faUser} />
+                      <h5>Admin</h5>
+                    </div>
+                  </div>
+                  <div className="time">
+                    <FontAwesomeIcon icon={faCalendar} color="#053f5c" />
+                    <p>01, April 2023</p>
+                  </div>
+                </div>
+              </div>
+              <div className="blog-main">
+                <img src={blog3} alt="" />
+                <div className="blog-desc">
+                  <p>Branding</p>
+                  <h2>What You Should Know About Branding</h2>
+                </div>
+                <div className="blog-writer">
+                  <div className="admin">
+                    <img src={admin} alt="" />
+                    <div className="admin-dets">
+                      <FontAwesomeIcon icon={faUser} />
+                      <h5>Admin</h5>
+                    </div>
+                  </div>
+                  <div className="time">
+                    <FontAwesomeIcon icon={faCalendar} color="#053f5c" />
+                    <p>01, April 2023</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

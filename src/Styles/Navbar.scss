@@ -21,8 +21,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     padding: 15px 0px 15px 0px;
+    width: 100%;
     @media screen and (max-width: 768px) {
       justify-content: space-between;
       padding: 15px 20px 15px 20px;
@@ -98,6 +98,9 @@
     @media screen and (max-width: 800px) {
       display: block;
       padding: 10px 20px 10px 0px;
+      .ham-icon {
+        cursor: pointer;
+      }
     }
   }
 }

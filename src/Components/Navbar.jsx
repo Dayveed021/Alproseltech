@@ -45,15 +45,16 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="nav-btn">
-        <button>Start a Project</button>
-      </div>
-      <div className="ham" onClick={togglemenu}>
-        <FontAwesomeIcon
-          icon={toggle ? faXmark : faBars}
-          style={{ width: "20px", height: "30px" }}
-        />
+        <div className="nav-btn">
+          <button>Start a Project</button>
+        </div>
+        <div className="ham" onClick={togglemenu}>
+          <FontAwesomeIcon
+            icon={toggle ? faXmark : faBars}
+            style={{ width: "20px", height: "30px" }}
+            className="ham-icon"
+          />
+        </div>
       </div>
     </div>
   );
