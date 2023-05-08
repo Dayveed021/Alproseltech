@@ -48,7 +48,6 @@
         align-items: center;
         gap: 40px;
         list-style: none;
-        border-bottom: 1px solid #ccc;
         padding: 20px 0px 20px 0px;
         li {
           width: 100%;
@@ -68,15 +67,6 @@
           }
         }
       }
-      .side-logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          height: 50px;
-          width: 200px;
-        }
-      }
       .side-links {
         display: none;
         margin-top: 30px;
@@ -90,6 +80,10 @@
             height: 50px;
             width: 200px;
             cursor: pointer;
+            img {
+              height: 50px;
+              width: 200px;
+            }
           }
           hr {
             height: 2px;
@@ -153,6 +147,7 @@
           gap: 20px;
           width: 100%;
           overflow: hidden;
+          border-bottom: 1px solid #ccc;
           li {
             width: 100% !important;
             display: flex;
