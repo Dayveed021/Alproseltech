@@ -89,22 +89,12 @@
       }
       .side-links {
         display: none;
-        margin-top: 10px;
         @media screen and (max-width: 800px) {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          gap: 15px;
-          .side-logo {
-            height: 50px;
-            width: 200px;
-            cursor: pointer;
-            img {
-              height: 50px;
-              width: 200px;
-            }
-          }
+          gap: 10px;
           hr {
             height: 2px;
             border: none;
@@ -167,7 +157,6 @@
           gap: 20px;
           width: 100%;
           overflow: hidden;
-          border-bottom: 1px solid #ccc;
           li {
             width: 100% !important;
             display: flex;

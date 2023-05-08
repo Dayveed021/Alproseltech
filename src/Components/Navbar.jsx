@@ -66,11 +66,7 @@ export const Navbar = () => {
           </ul>
 
           <div className="side-links">
-            <div className="side-logo">
-              <Link to="/">
-                <img src={FootLogo} alt="" />
-              </Link>
-            </div>
+            <div className="side-logo"></div>
             <hr />
             <div className="side-icons">
               <div className="side-icon">
