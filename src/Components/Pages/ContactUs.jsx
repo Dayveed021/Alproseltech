@@ -6,7 +6,7 @@ const ContactUs = () => {
   return (
     <>
       <Navbar />
-      <div>ContcatUs</div>
+      <div>ContactUs</div>
       <Footer />
     </>
   );
