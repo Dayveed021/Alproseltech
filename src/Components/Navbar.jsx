@@ -4,6 +4,7 @@ import Logo from "../Images/Logo.png";
 import "../Styles/Navbar.scss";
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import FootLogo from "../Images/FootLogo.png";
 
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -56,6 +57,29 @@ export const Navbar = () => {
               </NavLink>
             </li>
           </ul>
+
+          <div className="side-links">
+            <div className="side-logo">
+              <Link to="/">
+                <img src={FootLogo} alt="" />
+              </Link>
+            </div>
+            <hr />
+            <div className="side-icons">
+              <div className="side-icon">
+                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+              </div>
+              <div className="side-icon">
+                <i class="fa-brands fa-twitter fa-xl"></i>
+              </div>
+              <div className="side-icon">
+                <i class="fa-brands fa-facebook-f fa-xl"></i>
+              </div>
+              <div className="side-icon">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+              </div>
+            </div>
+          </div>
         </nav>
         <div className="nav-btn">
           <Link to="/contact">
@@ -65,7 +89,14 @@ export const Navbar = () => {
         <div className="ham" onClick={togglemenu}>
           <FontAwesomeIcon
             icon={toggle ? faXmark : faBars}
-            style={{ width: "20px", height: "30px" }}
+            style={{
+              width: "20px",
+              height: "30px",
+              padding: "10px 15px 10px 15px",
+              backgroundColor: "#E22628",
+              borderRadius: "50%",
+              color: "#fff",
+            }}
             className="ham-icon"
           />
         </div>
