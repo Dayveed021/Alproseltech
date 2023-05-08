@@ -23,7 +23,7 @@
     align-items: center;
     padding: 15px 0px 15px 0px;
     width: 100%;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 825px) {
       justify-content: space-between;
       padding: 15px;
     }
@@ -51,7 +51,7 @@
         padding: 0px 0px 20px 0px;
         button {
           display: none;
-          @media screen and (max-width: 800px) {
+          @media screen and (max-width: 825px) {
             display: block;
             display: flex;
             justify-content: center;
@@ -89,7 +89,7 @@
       }
       .side-links {
         display: none;
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 825px) {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -125,7 +125,7 @@
         }
       }
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 825px) {
       nav {
         flex-direction: column;
         align-items: center;
@@ -194,7 +194,7 @@
     }
     .null {
       display: block;
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 825px) {
         display: none;
       }
     }
@@ -214,17 +214,17 @@
         box-shadow: 0px 0px 0px 2px inset red;
         color: #053f5c;
       }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 825px) {
         display: none;
       }
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 825px) {
       display: none;
     }
   }
   .ham {
     display: none;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 825px) {
       display: block;
       .ham-icon {
         cursor: pointer;
