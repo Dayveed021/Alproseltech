@@ -21,32 +21,46 @@ export const Navbar = () => {
             <img src={Logo} alt="Alproseltech" />
           </Link>
         </div>
-        <div className={toggle ? "nav" : "null"}>
+        <nav className={toggle ? "nav-items" : "null"}>
           <ul>
             <li>
-              <NavLink to="/" className="nav-items">
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? "active" : "false")}
+              >
                 HOME
               </NavLink>
             </li>
             <li>
-              <NavLink to="/" className="nav-items">
+              <NavLink
+                to="/service"
+                className={({ isActive }) => (isActive ? "active" : "false")}
+              >
                 SERVICES
               </NavLink>
             </li>
             <li>
-              <NavLink to="/" className="nav-items">
-                WORK
+              <NavLink
+                to="/portfolio"
+                className={({ isActive }) => (isActive ? "active" : "false")}
+              >
+                PORTFOLIO
               </NavLink>
             </li>
             <li>
-              <NavLink to="/" className="nav-items">
-                BLOG
+              <NavLink
+                to="/blog"
+                className={({ isActive }) => (isActive ? "active" : "false")}
+              >
+                BLOGS
               </NavLink>
             </li>
           </ul>
-        </div>
+        </nav>
         <div className="nav-btn">
-          <button>Start a Project</button>
+          <Link to="/contact">
+            <button>Start a Project</button>
+          </Link>
         </div>
         <div className="ham" onClick={togglemenu}>
           <FontAwesomeIcon

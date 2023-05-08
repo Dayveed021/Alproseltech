@@ -22,6 +22,8 @@ import b2 from "../../Images/b2.jpg";
 import b3 from "../../Images/b3.jpg";
 import ap from "../../Images/ap.png";
 import user from "../../Images/user.jpg";
+import user2 from "../../Images/user2.jpg";
+import user3 from "../../Images/user3.jpg";
 import skilled from "../../Images/Skilled.png";
 import custom from "../../Images/Custom.png";
 import quality from "../../Images/Quality.png";
@@ -38,7 +40,7 @@ const writer = [
     id: 1,
     testimony:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, aut fugiat molestias quia vitae veniam harum iure explicabo cupiditate ratione dolorum dolorem recusandae id quisquam modi perspiciatis et repellat eligendi?",
-    picture: user,
+    picture: user2,
     name: "Adelank Sam",
     title: "CEO of SUNPOWER",
   },
@@ -54,7 +56,7 @@ const writer = [
     id: 3,
     testimony:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, aut fugiat molestias quia vitae veniam harum iure explicabo cupiditate ratione dolorum dolorem recusandae id quisquam modi perspiciatis et repellat eligendi?",
-    picture: user,
+    picture: user3,
     name: "Jamz Ofotori",
     title: "CEO of DRIVEWAY",
   },
