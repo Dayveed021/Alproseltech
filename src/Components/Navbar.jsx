@@ -90,9 +90,9 @@ export const Navbar = () => {
           <FontAwesomeIcon
             icon={toggle ? faXmark : faBars}
             style={{
-              width: "20px",
-              height: "30px",
-              padding: "10px 15px 10px 15px",
+              width: "15px",
+              height: "25px",
+              padding: "5px 10px 5px 10px",
               backgroundColor: "#E22628",
               borderRadius: "50%",
               color: "#fff",
