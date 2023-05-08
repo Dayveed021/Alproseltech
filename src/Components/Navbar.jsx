@@ -1,4 +1,8 @@
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleRight,
+  faBars,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logo from "../Images/Logo.png";
 import "../Styles/Navbar.scss";
@@ -56,6 +60,9 @@ export const Navbar = () => {
                 BLOGS
               </NavLink>
             </li>
+            <button>
+              <p>Get Started</p> <FontAwesomeIcon icon={faAngleRight} bounce />
+            </button>
           </ul>
 
           <div className="side-links">
