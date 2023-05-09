@@ -13,26 +13,26 @@ import {
   faLightbulb,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import p1 from "../../Images/p1.png";
-import p2 from "../../Images/p2.png";
-import p3 from "../../Images/p3.png";
-import p4 from "../../Images/p4.png";
-import b1 from "../../Images/b1.jpg";
-import b2 from "../../Images/b2.jpg";
-import b3 from "../../Images/b3.jpg";
-import ap from "../../Images/ap.png";
-import user from "../../Images/user.jpg";
-import user2 from "../../Images/user2.jpg";
-import user3 from "../../Images/user3.jpg";
-import skilled from "../../Images/Skilled.png";
-import custom from "../../Images/Custom.png";
-import quality from "../../Images/Quality.png";
-import affordable from "../../Images/Affordable.png";
-import support from "../../Images/Support.png";
-import blog1 from "../../Images/Blog-image1.jpg";
-import blog2 from "../../Images/Blogimage-2.png";
-import blog3 from "../../Images/blog3.jpg";
-import admin from "../../Images/admin.jpg";
+import p1 from "../../Images/p1.png.webp";
+import p2 from "../../Images/p2.png.webp";
+import p3 from "../../Images/p3.png.webp";
+import p4 from "../../Images/p4.webp";
+import b1 from "../../Images/b1.webp";
+import b2 from "../../Images/b2.webp";
+import b3 from "../../Images/b3.webp";
+import ap from "../../Images/ap.webp";
+import user from "../../Images/user.webp";
+import user2 from "../../Images/user2.webp";
+import user3 from "../../Images/user3.webp";
+import skilled from "../../Images/Skilled.webp";
+import custom from "../../Images/Custom.png.webp";
+import quality from "../../Images/Quality.webp";
+import affordable from "../../Images/Affordable.webp";
+import support from "../../Images/Support.webp";
+import blog1 from "../../Images/Blog-image1.jpg.webp";
+import blog2 from "../../Images/Blogimage-2.png.webp";
+import blog3 from "../../Images/blog3.jpg.webp";
+import admin from "../../Images/admin.webp";
 import Typing from "react-typing-effect";
 
 const writer = [

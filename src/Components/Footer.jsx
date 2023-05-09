@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import FootLogo from "../Images/FootLogo.png";
+import FootLogo from "../Images/FootLogo.png.webp";
 import "../Styles/Footer.scss";
 import {
   faEnvelope,

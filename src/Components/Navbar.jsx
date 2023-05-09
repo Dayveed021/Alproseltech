@@ -4,11 +4,10 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Logo from "../Images/Logo.png";
+import Logo from "../Images/Logo.png.webp";
 import "../Styles/Navbar.scss";
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import FootLogo from "../Images/FootLogo.png";
 
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
